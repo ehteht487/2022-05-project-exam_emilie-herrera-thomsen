@@ -1,0 +1,88 @@
+@font-face {
+    font-family: Cotta Free;
+    src: url(fonts/Cotta\ Free.otf) format(otf);
+}
+
+@font-face {
+    font-family: GiveAway;
+    src: url(fonts/GiveAway.otf) format(otf);
+}
+
+body {
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
+    color: #707070;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 7px;
+}
+
+a {
+    text-decoration: none;
+    color: #707070;
+} 
+
+.logo {
+    font-family: Cotta;
+    color: #5D840A;
+    font-size: 2.5rem;
+    margin-left: 15px;
+}
+
+.line {
+    border-bottom: 1px solid #F28A2E;
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    max-width: 80px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.current {
+    text-decoration: underline;
+  }
+
+/* Footer */
+
+footer {
+    background-color: rgb(93, 132, 10, 0.1);
+    font-size: 14px;
+}
+
+.footer-content {    
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 10px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.footer-img {
+    max-width: 80px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.footer-copy {
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    border-top: 1px solid #F28A2E;   
+}
+
+
+
