@@ -5,23 +5,27 @@
 
 @font-face {
     font-family: GiveAway;
-    src: url(fonts/GiveAway.otf) format(otf);
+    src: url(fonts/GiveAway.otf)) format(otf);
 }
 
 body {
     font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif;
     color: #707070;
     margin: 0;
+    line-height: 22px;
+    
 }
 
 header {
     display: flex;
     align-items: center;
+    padding-bottom: 1rem;
 }
 
 nav li {
     display: inline-block;
     margin: 7px;
+    padding-left: 2rem;
 }
 
 a {
@@ -51,7 +55,166 @@ a {
 
 .current {
     text-decoration: underline;
+}
+
+h1, h2 {
+    font-family: Cotta;
+    color: #5D840A;
+    font-size: 2.2rem;
+}
+
+/* Homepage */
+
+.hero {
+    background-image: url(/images/smoothie_header.jpg);
+    min-height: 70vh;
+    background-size: cover;
+    background-position-x: left;
+    background-position-y: top;
+    position: relative;
   }
+
+.first-section {
+    display: flex;
+    margin: 2rem;
+    padding-top: 2rem;
+}
+
+.first-section-div {
+    padding: 0rem 2rem;
+    border-right: 1px solid #F28A2E;
+}
+
+.first-section-img {
+    max-width: 70%;
+    border-radius: 40%;
+    display: flex;
+    margin: auto;
+}
+
+.third-section {
+    text-align: center;
+    margin: 5rem 20rem;
+    font-family: Give Away;
+    font-size: 1.3rem;
+    color: #5D840A;
+}
+
+@media (min-width: 430px) and (max-width: 1200px) {
+    .first-section {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem;
+        padding-top: 2rem;
+    }        
+}
+
+/*About*/
+
+.hero-about {
+    background-image: url(/images/orange-hero.jpg);
+    min-height: 40vh;
+    background-size: cover;
+    background-position-x: left;
+    background-position-y: bottom;
+    position: relative;
+}
+
+.container {
+    height: 800px;
+}
+
+.about-section {
+    width: 600px;
+    height: 400px;
+    position: relative;
+    margin: 50px auto;
+    border: 1px solid #F28A2E;
+    padding: 20px;
+    z-index: 1;
+}
+
+.about-content {
+    height: 300px;
+    padding: 2rem;
+    background-color: rgb(93, 132, 10, 0.1);
+    z-index: 1;
+}
+
+.about-img {
+    border-radius: 40%;
+    max-width: 500px;
+    position: relative;
+    margin-left: 230px;
+    z-index: 2;
+}
+
+
+/*Contact*/
+
+main {
+    min-height: 20rem;
+}
+
+.background-contact {
+    background-image: url(/images/nuts_and_lentils.jpg);
+    background-size: cover;
+}
+
+.contact {
+    background-color: #FDFAF7;
+    max-width: 70%;
+    margin: auto;
+    height: 600px;
+}
+
+.contact-info {
+    text-align: center;
+    padding: 2rem 3rem;
+    border-bottom: 1px solid #F28A2E; 
+}
+
+#contactForm {
+    max-width: 80%;
+    margin: auto;
+    padding: 3rem;
+}
+
+.errorForm {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+label, input {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.contact-submit {
+background-color: #F28A2E;
+margin-top: 2em;
+padding: 0.7rem 2.5rem;
+}
+
+
+/*Blogs*/
+
+.hero-blog {
+    background-image: url(/images/apple-hero.jpg);
+    min-height: 40vh;
+    background-size: cover;
+    background-position-x: left;
+    background-position-y: bottom;
+    position: relative;
+}
+
 
 /* Footer */
 
@@ -82,6 +245,16 @@ li {
     padding: 1rem;
     margin: 1rem;
     border-top: 1px solid #F28A2E;   
+}
+
+.error {
+    background: rgb(240, 178, 178);
+    padding: 5px;
+    border: 3px solid rgb(211, 3, 3);
+    color: rgb(209, 6, 6);
+    font-size: 20px;
+    margin-top: 2%;
+    
 }
 
 
